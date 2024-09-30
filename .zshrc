@@ -106,3 +106,6 @@ source $ZSH/oh-my-zsh.sh
 # neovim
 alias vim="nvim"
 export PATH="$PATH:/opt/nvim-linux64/bin"
+
+#xxx:
+alias sysctl="sudo sysctl"
