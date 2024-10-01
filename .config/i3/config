@@ -3,17 +3,16 @@ set $super Mod4
 set $alt Mod1
 
 # set font
-font pango:Ionicons 9, Poppins Regular 9
+font pango:JetBrains mono
 
 # use mouse+$super to drag floating windows to their wanted position
 floating_modifier $super
 
 # autostart
-exec --no-startup-id hsetroot -center ~/.wallpaper.png
+exec --no-startup-id hsetroot -center ~/Pictures/bk_fr.png
 
 # start a terminal
-bindsym $super+Return exec i3-sensible-terminal
-
+bindsym $super+Return exec wezterm
 # start dmenu (a program launcher)
 bindsym $super+d exec i3-dmenu-desktop --dmenu="dmenu -i -b \
 -fn 'Poppins:size=9' -nb '#141c21' -nf '#93a1a1' \
@@ -33,7 +32,7 @@ bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 
 # kill focused window
-bindsym $super+c kill
+bindsym $super+q kill
 bindsym $alt+F4 kill
 
 # change focus
@@ -86,7 +85,7 @@ bindsym $super+Shift+6 move container to workspace 6:VI
 bindsym $super+BackSpace exec "i3-msg restart"
 
 # exit i3
-bindsym $super+q exec "i3-nagbar -t warning -m 'Really, exit?' \
+bindsym $super+c exec "i3-nagbar -t warning -m 'Really, exit?' \
 -b 'Yes' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
