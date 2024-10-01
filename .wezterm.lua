@@ -9,5 +9,6 @@ local config = wezterm.config_builder()
 -- For example, changing the color scheme:
 config.color_scheme = "Gruvbox Dark (Gogh)"
 
+config.font = wezterm.font("JetBrains Mono")
 -- and finally, return the configuration to wezterm
 return config
