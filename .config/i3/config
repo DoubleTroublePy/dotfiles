@@ -1,3 +1,9 @@
+# xrandr setting
+# rotate the secondary screen on startup
+exec xrandr --output HDMI-1 --rotate left
+# set secondary screen to the left
+exec xrandr --output DP-0 --auto --right-of HDMI-1 -o left
+
 # set modifier
 set $super Mod4
 set $alt Mod1
@@ -130,7 +136,10 @@ client.background #263640
 # window rules, you can find the window class using xprop
 for_window [class=Eog|Sxiv|feh|mpv|Vlc|File-roller|Xarchiver] floating enable
 for_window [class=Eog|Sxiv|feh|mpv|Vlc|File-roller|Xarchiver] focus
-for_window [class=".*"] border pixel 8
+for_window [class=".*"] border pixel 2
 hide_edge_borders smart
-gaps inner 12
+gaps inner 5
 smart_gaps on
+
+# exec startup script
+exec --no-startup-id $HOME/.startup.sh
