@@ -109,3 +109,6 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 
 #xxx:
 alias sysctl="sudo sysctl"
+
+# richweather
+alias richweather='python3 /usr/local/bin/richweather'
