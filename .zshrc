@@ -112,3 +112,10 @@ alias sysctl="sudo sysctl"
 
 # richweather
 alias richweather='python3 /usr/local/bin/richweather'
+
+# true color term
+export CLICOLOR_FORCE=1
+export COLORTERM=truecolor
+
+# import scripts
+source .zshrc_fn.sh
