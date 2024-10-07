@@ -1,8 +1,8 @@
 general {
-	output_format = "i3bar"
-	colors = false
-	markup = pango
-	interval = 5
+  output_format = "i3bar"
+  colors = false
+  markup = pango
+  interval = 5
 }
 
 order += "load"
@@ -12,28 +12,28 @@ order += "volume master"
 order += "time"
 
 load {
-	format = "<span background='#b08500'> Load </span><span background='#bfbaac'>  %5min </span>"
+  format = "<span background='#b08500'> Load </span><span background='#bfbaac'>  %5min </span>"
 }
 
 cpu_temperature 0 {
-	format = "<span background='#d12f2c'> Cpu </span><span background='#bfbaac'>  %degrees °C  </span>"
-	path = "/sys/class/thermal/thermal_zone0/temp"
+  format = "<span background='#d12f2c'> Cpu </span><span background='#bfbaac'>  %degrees °C  </span>"
+  path = "/sys/class/thermal/thermal_zone0/temp"
 }
 
 ethernet enp5s0 {
-        format_up = "<span background='#289c93'> eth </span><span background='#bfbaac'> %ip (%speed) </span>"
-        format_down = "<span background='#289c93'> eth </span><span background='#bfbaac'> Disconnected </span>"
+  format_up = "<span background='#289c93'> eth </span><span background='#bfbaac'> %ip (%speed) </span>"
+  format_down = "<span background='#289c93'> eth </span><span background='#bfbaac'> Disconnected </span>"
 }
 
 volume master {
-	format = "<span background='#696ebf'>  Volume  </span><span background='#bfbaac'>  %volume  </span>"
-	format_muted = "<span background='#696ebf'>  Volume  </span><span background='#bfbaac'>  Muted  </span>"
-	device = "default"
-	mixer = "Master"
-	mixer_idx = 0
+  format = "<span background='#696ebf'>  Volume  </span><span background='#bfbaac'>  %volume  </span>"
+  format_muted = "<span background='#696ebf'>  Volume  </span><span background='#bfbaac'>  Muted  </span>"
+  device = "default"
+  mixer = "Master"
+  mixer_idx = 0
 }
 
 time {
-	format = "<span background='#2587cc'> Datetime </span><span background='#bfbaac'> %d %b (%m) - %H:%M  </span>"
+  format = "<span background='#2587cc'> Datetime </span><span background='#bfbaac'> %d %b (%m) - %H:%M  </span>"
 }
 

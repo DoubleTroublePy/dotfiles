@@ -4,7 +4,7 @@
 # rotate the secondary screen on startup
 xrandr --output HDMI-1 --rotate left
 # set secondary screen to the left
-xrandr --output DP-0 --auto --right-of HDMI-1 -o left
+xrandr --output DP-0 --auto --right-of HDMI-1 --primary
 
 #xxx: for some reason we need to wait 2 seconds
 sleep 2

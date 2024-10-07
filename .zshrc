@@ -118,4 +118,4 @@ export CLICOLOR_FORCE=1
 export COLORTERM=truecolor
 
 # import scripts
-source .zshrc_fn.sh
+source ~/.zshrc_fn.sh

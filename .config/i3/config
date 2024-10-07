@@ -10,7 +10,7 @@ floating_modifier $super
 
 # autostart
 exec --no-startup-id $HOME/.startup.sh
-
+exec --no-startup-id copyq
 # start a terminal
 bindsym $super+Return exec --no-startup-id wezterm
 # start dmenu (a program launcher)
@@ -19,15 +19,15 @@ bindsym $super+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -b \
 -sb '#289c93' -sf '#141c21'"
 
 # common apps keybinds
-bindsym Print exec --no-startup-id scrot 'Cheese_%a-%d%b%y_%H.%M.png' -e 'xdg-open ~/$f'
+bindsym --whole-window $super+p exec --no-startup-id import /home/dtpy/Pictures/screenshots/$(date +%Y_%m_%d_%H%M%S).png
 bindsym $super+l exec --no-startup-id i3lock --color 7f485d
-bindsym $super+w exec --no-startup-id --no-startup-id firefox
+bindsym $super+w exec --no-startup-id firefox
 bindsym $super+e exec --no-startup-id thunar
 
 # change volume and brightness
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 5%+
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set Master 5%-
-bindsym XF86AudioMute exec --no-startup-id amixer set Master toggle
+bindsym --whole-window $super+button4 exec --no-startup-id amixer -q set Master 5%+
+bindsym --whole-window $super+button5 exec --no-startup-id amixer -q set Master 5%-
+bindsym --whole-window $super+button2 exec --no-startup-id amixer set Master toggle
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set 5%+
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
@@ -105,6 +105,7 @@ bar {
 	workspace_min_width 24
 	padding 2px 8px 2px 8px
 	strip_workspace_numbers yes
+  tray_output primary
 
 	colors {
 	background #141c21
