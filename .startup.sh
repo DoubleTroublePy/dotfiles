@@ -11,3 +11,9 @@ sleep 2
 
 # set the background
 hsetroot -extend Pictures/vbk_fr.png
+
+sleep 2
+
+dhclient enp5s0
+xset s off
+xset -dpms

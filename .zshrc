@@ -107,6 +107,9 @@ source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
+#scripts command
+alias srun="$HOME/.scripts/srun.sh"
+
 #xxx:
 alias sysctl="sudo sysctl"
 
@@ -118,4 +121,6 @@ export CLICOLOR_FORCE=1
 export COLORTERM=truecolor
 
 # import scripts
-source ~/.zshrc_fn.sh
+source ~/.zshrc_fn
+
+alias mv="mv -u"

@@ -11,6 +11,8 @@ floating_modifier $super
 # autostart
 exec --no-startup-id $HOME/.startup.sh
 exec --no-startup-id copyq
+exec --no-startup-id dhclient enp5s0
+
 # start a terminal
 bindsym $super+Return exec --no-startup-id wezterm
 # start dmenu (a program launcher)
