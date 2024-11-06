@@ -3,12 +3,20 @@
 # script for challing other scripts in the .scripts folder
 # by: dtpy
 
+# TODO:
+# [] - add support for function as flies
+# [] - fix the position problem
+# [] - address the FIXME
+
+SCR="$HOME/.scripts/"
+
 cmd="$1"
+fn_exists() {
+  [ $(type -t $1)"" == 'function' ]
+}
 
 print() {
-  for i in ${@:1}; do
-    echo srun: "$i"
-  done
+  echo srun: "$1"
 }
 
 main() {
@@ -27,16 +35,40 @@ main() {
 
   case $cmd in
   ls)
-    files=$(ls .)
+    files=$(ls $SCR)
     files=${files//.sh/}
     echo "scripts: "
     for i in ${files//srun/}; do
-      echo " - $i"
+      source $i.sh
+      echo " $i"
+      if ! fn_exists get_fn; then
+        echo " ╘ the file do not provide a ls function"
+        echo ""
+        continue
+      fi
+
+      fns="$(get_fn)"
+      fnl=$(($(echo "$fns" | wc -l) - 1))
+
+      i=0
+      for f in $fns; do
+        if [ "$i" -eq "$fnl" ]; then
+          echo " └ ""$f"
+          continue
+        fi
+        echo " ├ ""$f"
+        i=$(($i + 1))
+      done
+
+      # remove the get_fn function from a file to another
+      unset get_fn
+      echo ""
     done
     return
     ;;
   esac
 
+  # FIXME: sometimes it tries to call a file that not exist
   if [ ! -f $1 ]; then
     print "script not found"
     return

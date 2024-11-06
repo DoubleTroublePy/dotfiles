@@ -124,3 +124,8 @@ export COLORTERM=truecolor
 source ~/.zshrc_fn
 
 alias mv="mv -u"
+
+# moebius
+moebius (){
+  ( cd ~/.local/bin/moebius/ && npm start )
+}

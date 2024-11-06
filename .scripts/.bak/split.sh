@@ -2,6 +2,7 @@
 # split
 # divide a folder in subfolder with a given max file number
 # by: dtpy
+
 i=0
 for f in $(ls -tU .); do
   d=part_$(printf %03d $((i / 50000 + 1)))
