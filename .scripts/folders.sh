@@ -33,6 +33,7 @@ mkt() {
   }
 
   # TODO: correct the folder generation makind that for every dept thah can be more than one folder
+  # substantialy redo it
   dep() {
     dep=$1
     fnum=$2
