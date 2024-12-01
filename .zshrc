@@ -126,6 +126,6 @@ source ~/.zshrc_fn
 alias mv="mv -u"
 
 # moebius
-moebius (){
-  ( cd ~/.local/bin/moebius/ && npm start )
-}
+#moebius (){
+#  ( cd ~/.local/bin/moebius/ && npm start )
+#}
