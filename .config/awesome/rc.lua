@@ -68,7 +68,12 @@ local function run_once(cmd_arr)
   end
 end
 
-run_once({ "urxvtd", "unclutter -root" }) -- comma-separated entries
+run_once({
+  "urxvtd",
+  "unclutter -root",
+  "xautolock -time 1 -locker ./.scripts/i3lock.sh",
+  "xautolock -time 1 -locker 'systemctl suspend'",
+}) -- comma-separated entries
 
 -- This function implements the XDG autostart specification
 --[[
@@ -575,7 +580,7 @@ clientkeys = mytable.join(
 --[[awful.key({ altkey, "Shift" }, "m", lain.util.magnify_client,
     { description = "magnify client", group = "client" }),
 --]]
-  awful.key({ modkey, }, "f",
+  awful.key({ modkey, }, "m",
     function(c)
       c.fullscreen = not c.fullscreen
       c:raise()
@@ -598,7 +603,7 @@ clientkeys = mytable.join(
       c.minimized = true
     end,
     { description = "minimize", group = "client" }),
-  awful.key({ modkey, }, "m",
+  awful.key({ modkey, }, "f",
     function(c)
       c.maximized = not c.maximized
       c:raise()
