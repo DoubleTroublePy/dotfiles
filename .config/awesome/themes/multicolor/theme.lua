@@ -17,7 +17,7 @@ local my_table                                  = awful.util.table or gears.tabl
 local theme                                     = {}
 theme.confdir                                   = os.getenv("HOME") .. "/.config/awesome/themes/multicolor"
 theme.wallpaper                                 = "/home/dtpy/machine_arald.png"
-theme.font                                      = "JetBrains 8"
+theme.font                                      = "JetBrains 9"
 theme.menu_bg_normal                            = "#000000"
 theme.menu_bg_focus                             = "#000000"
 theme.bg_normal                                 = "#000000"
@@ -95,9 +95,11 @@ local markup                                    = lain.util.markup
 
 -- Textclock
 os.setlocale(os.getenv("LANG")) -- to localize the clock
-local mytextclock = wibox.widget.textclock(markup("#ab7367", " | ") ..
-  markup("#7788af", " %B %A") .. markup("#ab7367", " | ") .. markup("#7788af", " %Y-%m-%d ") ..
-  markup("#ab7367", "|") .. markup("#808080", " %H:%M  "))
+local mytextclock = wibox.widget.textclock(
+  markup("#ab7367", " | ") .. markup("#7788af", " %A %b") ..
+  markup("#ab7367", " | ") .. markup("#808080", " %H:%M ") ..
+  markup("#ab7367", " | ") .. markup("#7788af", " %Y-%m-%d ") ..
+  markup("#ab7367", " | "))
 mytextclock.font = theme.font
 
 -- Calendar
@@ -177,9 +179,26 @@ local temp = lain.widget.temp({
 
 -- Battery
 local baticon = wibox.widget.imagebox(theme.widget_batt)
-local bat = lain.widget.bat({
+local bat_0 = lain.widget.bat({
   timeout = 5,
   battery = "BAT0",
+  ac = "AC",
+  settings = function()
+    local perc = bat_now.perc ~= "N/A" and bat_now.perc .. "%" or bat_now.perc
+
+    if bat_now.ac_status == 1 then
+      perc = "AC: " .. perc
+    else
+      perc = "BAT: " .. perc
+    end
+
+    widget:set_markup(markup.fontfg(theme.font, theme.fg_normal, perc .. " "))
+  end
+})
+
+local bat_1 = lain.widget.bat({
+  timeout = 5,
+  battery = "BAT1",
   ac = "AC",
   settings = function()
     local perc = bat_now.perc ~= "N/A" and bat_now.perc .. "%" or bat_now.perc
@@ -220,8 +239,8 @@ local netupinfo = lain.widget.net({
         end
         --]]
 
-    widget:set_markup(markup.fontfg(theme.font, "#e54c62", net_now.sent .. " "))
-    netdowninfo:set_markup(markup.fontfg(theme.font, "#87af5f", net_now.received .. " "))
+    widget:set_markup(markup.fontfg(theme.font, "#e54c62", " " .. net_now.sent .. " "))
+    netdowninfo:set_markup(markup.fontfg(theme.font, "#87af5f", " " .. net_now.received .. " "))
   end
 })
 
@@ -293,46 +312,56 @@ function theme.at_screen_connect(s)
   s.mytasklist = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, awful.util.tasklist_buttons)
 
   -- Create the wibox
-  s.mywibox = awful.wibar({ position = "top", screen = s, height = dpi(19), bg = theme.bg_normal, fg = theme.fg_normal })
+  s.mywibox = awful.wibar({ position = "top", screen = s, height = dpi(20), bg = theme.bg_normal, fg = theme.fg_normal })
 
   -- Add widgets to the wibox
   s.mywibox:setup {
-    layout = wibox.layout.align.horizontal,
-    { -- Left widgets
-      layout = wibox.layout.fixed.horizontal,
-      --s.mylayoutbox,
-      s.mytaglist,
-      s.mypromptbox,
-      mpdicon,
-      theme.mpd.widget,
+    layout = wibox.layout.stack,
+    {
+      layout = wibox.layout.align.horizontal,
+      { -- Left widgets
+        layout = wibox.layout.fixed.horizontal,
+        --s.mylayoutbox,
+        s.mytaglist,
+        s.mypromptbox,
+        mpdicon,
+        theme.mpd.widget,
+      },
+      nil,
+      { -- Right widgets
+        layout = wibox.layout.fixed.horizontal,
+        wibox.widget.systray(),
+        --mailicon,
+        --theme.mail.widget,
+        --netdownicon,
+        netdowninfo,
+        --netupicon,
+        netupinfo.widget,
+        volicon,
+        theme.volume.widget,
+        baticon,
+        bat_0.widget,
+        baticon,
+        bat_1.widget,
+        memicon,
+        memory.widget,
+        cpuicon,
+        cpu.widget,
+        --fsicon,
+        --theme.fs.widget,
+        --weathericon,
+        --theme.weather.widget,
+        -- tempicon,
+        -- temp.widget,
+      },
     },
-    --s.mytasklist, -- Middle widget
-    nil,
-    { -- Right widgets
-      layout = wibox.layout.fixed.horizontal,
-      wibox.widget.systray(),
-      --mailicon,
-      --theme.mail.widget,
-      netdownicon,
-      netdowninfo,
-      netupicon,
-      netupinfo.widget,
-      volicon,
-      theme.volume.widget,
-      memicon,
-      memory.widget,
-      cpuicon,
-      cpu.widget,
-      --fsicon,
-      --theme.fs.widget,
-      --weathericon,
-      --theme.weather.widget,
-      -- tempicon,
-      -- temp.widget,
-      baticon,
-      bat.widget,
+    { -- Middle widget
       mytextclock,
+      valign = "center",
+      halign = "center",
+      layout = wibox.container.place,
     },
+
   }
 
   -- Create the bottom wibox
@@ -340,7 +369,7 @@ function theme.at_screen_connect(s)
     position = "bottom",
     screen = s,
     border_width = 0,
-    height = dpi(20),
+    height = dpi(15),
     bg = theme
         .bg_normal,
     fg = theme.fg_normal
