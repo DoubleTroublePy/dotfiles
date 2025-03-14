@@ -3,7 +3,7 @@
 
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "network", "idle_inhibitor", "battery", "tray"],
+    "modules-right": ["pulseaudio", "network", "idle_inhibitor", "battery", "battery#bat2", "tray"],
 
     "hyprland/workspaces": {
       "disable-scroll": true,
@@ -29,10 +29,24 @@
         "tooltip": true
     },
     "battery": {
+        "bat": "BAT0",
         "format": "{capacity}% {icon}",
         "format-alt": "{time} {icon}",
-        "format-icons": ["", "", "", "", ""],
-        "format-charging": "{capacity}% ",
+        "format-icons": [" ", " ", " ", " ", " "],
+        "format-charging": "{capacity}%󰂄 ",
+        "interval": 30,
+        "states": {
+            "warning": 25,
+            "critical": 10
+        },
+        "tooltip": false
+    },
+    "battery#bat2": {
+        "bat": "BAT1",
+        "format": "{capacity}% {icon}",
+        "format-alt": "{time} {icon}",
+        "format-icons": [" ", " ", " ", " ", " "],
+        "format-charging": "{capacity}%󰂄 ",
         "interval": 30,
         "states": {
             "warning": 25,
@@ -45,9 +59,9 @@
         "format-alt": "{ipaddr}/{cidr} {icon}",
         "format-alt-click": "click-right",
         "format-icons": {
-            "wifi": ["", "" ,""],
-            "ethernet": [""],
-            "disconnected": ["xx"]
+            "wifi": ["󰤯", "󰤟", "󰤢", "󰤥" ,"󰤨"],
+            "ethernet": ["󰛳"],
+            "disconnected": ["󱘖"]
         },
         "on-click": "kitty -e nmtui",
     "tooltip": false
