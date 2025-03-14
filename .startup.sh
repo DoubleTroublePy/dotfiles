@@ -15,5 +15,4 @@ hsetroot -extend Pictures/vbk_fr.png
 sleep 5
 
 dhclient enp5s0
-xset s off
-xset -dpms
+xset s offxset -dpms
