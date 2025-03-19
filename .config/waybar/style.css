@@ -2,10 +2,11 @@
     border:        none;
     border-radius: 0;
     font-family:   'JetBrains Mono';
-    font-size:     15px;
+    font-size:     13px;
     box-shadow:    none;
     text-shadow:   none;
     transition-duration: 0s;
+    min-height: 0;
 }
 
 window {
@@ -20,24 +21,35 @@ window#waybar.solo {
 
 #workspaces {
     margin: 0 5px;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 #workspaces button {
     padding:    0 5px;
-    color:      rgba(217, 216, 216, 0.4);
+    color:      rgba(255, 255, 255, 0.5);
+    border:     0.5px solid;
+    min-width: 0;
 }
 
 #workspaces button.visible {
-    color:      rgba(217, 216, 216, 1);
-}
+    background-color:      rgba(217, 216, 216, 0.5);
+    color:                rgba(0, 0, 0, 1);
+  }
 
-#workspaces button.focused {
-    border-top: 3px solid rgba(217, 216, 216, 1);
-    border-bottom: 3px solid rgba(217, 216, 216, 0);
+#workspaces button.active {
+    background-color:      rgba(217, 216, 216, 0.5);
+    color:                rgba(0, 0, 0, 1);
+    border-bottom: 3px solid rgba(255, 255, 255, 1);
 }
 
 #workspaces button.urgent {
-    color:      rgba(238, 46, 36, 1);
+    background-color:      rgba(238, 46, 36, 0.5);
+    color:                rgba(0, 0, 0, 1);
+}
+
+#workspaces button:hover {
+    background-color:      rgba(217, 216, 216, 0.5);
+    color:                rgba(0, 0, 0, 1);
 }
 
 #mode, #battery, #cpu, #memory, #network, #pulseaudio, #idle_inhibitor, #backlight, #custom-storage, #custom-spotify, #custom-weather, #custom-mail {
