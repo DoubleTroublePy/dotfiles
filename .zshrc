@@ -113,9 +113,8 @@ export JQ_LIB_DIR=/usr/lib/libjq.so
 #scripts command
 alias srun="$HOME/.scripts/srun.sh"
 
-#xxx:
-alias sysctl="sudo sysctl"
-
+# matlab
+alias matlab="./.local/share/MATLAB/bin/matlab -nodesktop -nosplash -softwareopengl -r"
 # richweather
 alias richweather='python3 /usr/local/bin/richweather'
 
