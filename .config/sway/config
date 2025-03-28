@@ -1,0 +1,6 @@
+exec swayidle -w before-sleep '$HOME/.scripts/swaylock.sh'
+set $laptop eDP-1
+bindswitch --reload --locked lid:on output $laptop disable
+bindswitch --reload --locked lid:off output $laptop enable
+bindswitch --reload --locked lid:on exec echo "lid:on"
+bindswitch --reload --locked lid:off exec echo "lid:off"
