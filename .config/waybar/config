@@ -3,7 +3,7 @@
 
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "network", "idle_inhibitor", "battery", "battery#bat2", "tray"],
+    "modules-right": ["pulseaudio", "network", "battery", "battery#bat2", "tray"],
 
     "hyprland/workspaces": {
       "disable-scroll": true,
@@ -20,10 +20,10 @@
     },
     "battery": {
         "bat": "BAT0",
-        "format": "{capacity}% {icon}",
+        "format": "batt: {capacity}%",
         "format-alt": "{time} {icon}",
         "format-icons": [" ", " ", " ", " ", " "],
-        "format-charging": "{capacity}%󰂄 ",
+        "format-charging": "ac: {capacity}%",
         "interval": 30,
         "states": {
             "warning": 25,
@@ -33,10 +33,10 @@
     },
     "battery#bat2": {
         "bat": "BAT1",
-        "format": "{capacity}% {icon}",
+        "format": "batt: {capacity}%",
         "format-alt": "{time} {icon}",
         "format-icons": [" ", " ", " ", " ", " "],
-        "format-charging": "{capacity}%󰂄 ",
+        "format-charging": "ac: {capacity}%",
         "interval": 30,
         "states": {
             "warning": 25,
@@ -46,8 +46,8 @@
     },
     "network": {
         "format": "{wifi}",
-        "format-wifi": "| {icon}  {essid} {signaldBm} {bandwidthUpBits} {bandwidthDownBits} {frequency} |",
-        "format-ethernet": "| {icon}  {ipaddr} {signaldBm} {bandwidthUpBits} {bandwidthDownBits} {frequency} |",
+        "format-wifi": "| {essid} {signaldBm} {bandwidthUpBits} {bandwidthDownBits} {frequency} |",
+        "format-ethernet": "| {ipaddr} {signaldBm} {bandwidthUpBits} {bandwidthDownBits} {frequency} |",
         "format-disconnected": "{icon}",
         "format-alt-click": "click-right",
         "format-icons": {
@@ -55,15 +55,16 @@
             "ethernet": ["󰛳"],
             "disconnected": ["󱘖"]
         },
+        "interval": 30,
         "on-click": "kitty -e nmtui",
-    "tooltip": false
+        "tooltip": false
     },
     "pulseaudio": {
       // "scroll-step": 1, // %, can be a float
-      "format": "{icon} {volume}%",
+      "format": "vol: {volume}%",
       "format-bluetooth": "{icon} {volume}% ",
       "format-bluetooth-muted": "  {icon} ",
-      "format-muted": " {format_source}",
+      "format-muted": "mut: {format_source}",
       "format-icons": {
           "headphone": "",
           "phone": "",
