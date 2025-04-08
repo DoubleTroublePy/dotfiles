@@ -106,6 +106,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # neovim
+alias vvim="\vim"
 alias vim="nvim"
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export JQ_LIB_DIR=/usr/lib/libjq.so

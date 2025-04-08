@@ -45,8 +45,10 @@
         "tooltip": false
     },
     "network": {
-        "format": "{icon}",
-        "format-alt": "{ipaddr}/{cidr} {icon}",
+        "format": "{wifi}",
+        "format-wifi": "| {icon}  {essid} {signaldBm} {bandwidthUpBits} {bandwidthDownBits} {frequency} |",
+        "format-ethernet": "| {icon}  {ipaddr} {signaldBm} {bandwidthUpBits} {bandwidthDownBits} {frequency} |",
+        "format-disconnected": "{icon}",
         "format-alt-click": "click-right",
         "format-icons": {
             "wifi": ["󰤯", "󰤟", "󰤢", "󰤥" ,"󰤨"],
