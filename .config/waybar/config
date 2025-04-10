@@ -46,8 +46,7 @@
         "tooltip": false
     },
     "network": {
-        "family": "ipv4",
-        "format-wifi": "| {ipaddr} {signaldBm} {bandwidthUpBits} {bandwidthDownBits} {frequency} |",
+        "format-wifi": "| {essid} {signaldBm} {bandwidthUpBits} {bandwidthDownBits} {frequency} |",
         "format-ethernet": "| {ipaddr} {signaldBm} {bandwidthUpBits} {bandwidthDownBits} |",
         "format-disconnected": "{icon}",
         "format-alt-click": "click-right",
