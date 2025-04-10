@@ -3,7 +3,7 @@
 
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "network", "battery", "battery#bat2", "tray"],
+    "modules-right": ["pulseaudio", "custom/sep", "network", "custom/sep", "battery", "battery#bat2", "custom/sep", "tray"],
 
     "hyprland/workspaces": {
       "disable-scroll": true,
@@ -46,8 +46,8 @@
         "tooltip": false
     },
     "network": {
-        "format-wifi": "| {essid} {signaldBm} {bandwidthUpBits} {bandwidthDownBits} {frequency} |",
-        "format-ethernet": "| {ipaddr} {signaldBm} {bandwidthUpBits} {bandwidthDownBits} |",
+        "format-wifi": "{essid}",
+        "format-ethernet": "{ipaddr}",
         "format-disconnected": "{icon}",
         "format-alt-click": "click-right",
         "format-icons": {
@@ -57,7 +57,8 @@
         },
         "interval": 1,
         "on-click": "kitty -e nmtui",
-        "tooltip": false
+        "tooltip": true,
+        "tooltip-format": "{essid} {ipaddr}\n{signaldBm} {bandwidthUpBits} {bandwidthDownBits} {frequency}"
     },
     "pulseaudio": {
       // "scroll-step": 1, // %, can be a float
@@ -72,7 +73,8 @@
           "car": "",
           "default": ["", "", ""]
       },
-      "on-click": "pavucontrol-qt"
+      "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+      "on-click-right": "pavucontrol-qt"
     },
     "custom/spotify": {
         "interval": 1,
@@ -128,6 +130,10 @@
         "exec": "/tmp/test blub",
         "param": "blah",
         "interval": 5
+    },
+    "custom/sep": {
+        "format": " | ",
+        "tooltip": false
     },
     "tray": {
         "icon-size": 18
