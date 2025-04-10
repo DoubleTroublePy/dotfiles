@@ -16,7 +16,8 @@
     },
     "clock": {
         "format": "{:%a %d %b %H:%M}",
-        "tooltip": true
+        "tooltip": true,
+        "tooltip-format": "{calendar}",
     },
     "battery": {
         "bat": "BAT0",
@@ -45,9 +46,9 @@
         "tooltip": false
     },
     "network": {
-        "format": "{wifi}",
-        "format-wifi": "| {essid} {signaldBm} {bandwidthUpBits} {bandwidthDownBits} {frequency} |",
-        "format-ethernet": "| {ipaddr} {signaldBm} {bandwidthUpBits} {bandwidthDownBits} {frequency} |",
+        "family": "ipv4",
+        "format-wifi": "| {ipaddr} {signaldBm} {bandwidthUpBits} {bandwidthDownBits} {frequency} |",
+        "format-ethernet": "| {ipaddr} {signaldBm} {bandwidthUpBits} {bandwidthDownBits} |",
         "format-disconnected": "{icon}",
         "format-alt-click": "click-right",
         "format-icons": {
@@ -55,7 +56,7 @@
             "ethernet": ["󰛳"],
             "disconnected": ["󱘖"]
         },
-        "interval": 30,
+        "interval": 1,
         "on-click": "kitty -e nmtui",
         "tooltip": false
     },
