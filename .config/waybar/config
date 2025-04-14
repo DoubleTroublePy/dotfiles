@@ -3,7 +3,7 @@
 
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "custom/sep", "network", "custom/sep", "battery", "battery#bat2", "custom/sep", "tray"],
+    "modules-right": ["pulseaudio", "custom/sep", "network", "battery", "battery#bat2", "custom/sep", "tray"],
 
     "hyprland/workspaces": {
       "disable-scroll": true,
@@ -21,10 +21,10 @@
     },
     "battery": {
         "bat": "BAT0",
-        "format": "batt: {capacity}%",
-        "format-alt": "{time} {icon}",
+        "format": " | batt: {capacity}%",
+        "format-alt": " | {time} {icon}",
         "format-icons": [" ", " ", " ", " ", " "],
-        "format-charging": "ac: {capacity}%",
+        "format-charging": " | ac: {capacity}%",
         "interval": 30,
         "states": {
             "warning": 25,
@@ -61,7 +61,7 @@
         "tooltip-format": "{essid} {ipaddr}\n{signaldBm} {bandwidthUpBits} {bandwidthDownBits} {frequency}"
     },
     "pulseaudio": {
-      // "scroll-step": 1, // %, can be a float
+      "scroll-step": 5, // %, can be a float
       "format": "vol: {volume}%",
       "format-bluetooth": "{icon} {volume}% ",
       "format-bluetooth-muted": "  {icon} ",
@@ -133,6 +133,7 @@
     },
     "custom/sep": {
         "format": " | ",
+        "interval": "once",
         "tooltip": false
     },
     "tray": {

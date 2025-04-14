@@ -33,7 +33,7 @@
     origin = top-right
 
     # Offset from the origin
-    offset = 10x50
+    offset = 15x50
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
@@ -86,7 +86,7 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 1
+    frame_width = 3
 
     # Defines color of the frame around the notification window.
     frame_color = "#ff5eaf"
@@ -280,7 +280,7 @@
     # * context_all: Open context menu for all notifications.
     # These values can be strung together for each mouse event, and
     # will be executed in sequence.
-    mouse_left_click = do_action, open_url
+    mouse_left_click = do_action, open_url, close_current
     mouse_middle_click = do_action, close_current
     mouse_right_click = close_all
 
