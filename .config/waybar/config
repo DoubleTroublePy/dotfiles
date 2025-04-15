@@ -22,8 +22,6 @@
     "battery": {
         "bat": "BAT0",
         "format": " | batt: {capacity}%",
-        "format-alt": " | {time} {icon}",
-        "format-icons": [" ", " ", " ", " ", " "],
         "format-charging": " | ac: {capacity}%",
         "interval": 30,
         "states": {
@@ -35,8 +33,6 @@
     "battery#bat2": {
         "bat": "BAT1",
         "format": "batt: {capacity}%",
-        "format-alt": "{time} {icon}",
-        "format-icons": [" ", " ", " ", " ", " "],
         "format-charging": "ac: {capacity}%",
         "interval": 30,
         "states": {
@@ -46,7 +42,7 @@
         "tooltip": false
     },
     "network": {
-        "format-wifi": "{essid}",
+        "format-wifi": "{essid} {signaldBm}",
         "format-ethernet": "{ipaddr}",
         "format-disconnected": "{icon}",
         "format-alt-click": "click-right",
