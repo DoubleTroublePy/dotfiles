@@ -1,4 +1,3 @@
-exec swayidle -w before-sleep hyprlock
 set $laptop eDP-1
 bindswitch --reload --locked lid:on output $laptop disable
 bindswitch --reload --locked lid:off output $laptop enable
