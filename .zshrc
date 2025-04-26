@@ -12,6 +12,8 @@ ZSH_THEME="gnzh_custom"
 setopt correct
 alias c="clear"
 alias proton="$HOME/.proton.sh"
+alias lsusb="for devlink in /dev/disk/by-id/usb*; do readlink -f ${devlink}; done"
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
