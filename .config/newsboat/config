@@ -1,0 +1,14 @@
+# Feeds {{{
+  refresh-on-startup yes # disable auto refresh feeds on startup
+# }}}
+# Formatting {{{
+  feedlist-format " %4i %n :: [%T] › %t %> unread %U/%c total "
+  feedlist-title-format " Hey dtpy, you have [%u unread] feeds out of [%t total] feeds. Please checkout!! "
+  articlelist-format " %4i %n :: %t %> %D "
+  articlelist-title-format " %T ~ [%u unread] articles out of [%t total] articles. Read it fast!!!"
+# }}}
+# Others {{{
+  datetime-format "%d %B %Y"
+  html-renderer "w3m -dump -T text/html"
+# }}}
+# vim:ft=config:foldmethod=marker:foldlevel=0
