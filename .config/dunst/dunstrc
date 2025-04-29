@@ -113,7 +113,7 @@
     # Set to 0 to disable.
     # A client can set the 'transient' hint to bypass this. See the rules
     # section for how to disable this if necessary
-    idle_threshold = 120
+    idle_threshold = 0
 
     ### Text ###
 
@@ -170,7 +170,7 @@
     # Show age of message if message is older than show_age_threshold
     # seconds.
     # Set to -1 to disable.
-    show_age_threshold = 60
+    show_age_threshold = 30
 
     # Specify where to make an ellipsis in long lines.
     # Possible values are "start", "middle" and "end".
