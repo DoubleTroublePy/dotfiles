@@ -1,5 +1,5 @@
 " first thing is entering vim mode, not plain vi
-set nocompatible
+" set nocompatible
 
 " Turn syntax highlighting on.
 syntax on

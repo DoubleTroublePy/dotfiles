@@ -15,7 +15,7 @@
         "tooltip": false
     },
     "clock": {
-        "format": "{:%a %d %b %H:%M}",
+        "format": "{:%a[%u] %d %b[%m] %H:%M}",
         "tooltip": true,
         "tooltip-format": "{calendar}",
     },
