@@ -10,9 +10,10 @@ export EDITOR=vim
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="gnzh_custom"
 setopt correct
-alias c="clear"
+alias cls="clear"
 alias proton="$HOME/.proton.sh"
-alias lsusb="for devlink in /dev/disk/by-id/usb*; do readlink -f ${devlink}; done"
+# alias lsusb="for devlink in /dev/disk/by-id/usb*; do readlink -f ${devlink}; done"
+alias c="$HOME/.scripts/calc.sh"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load

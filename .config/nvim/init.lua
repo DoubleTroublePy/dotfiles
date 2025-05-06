@@ -59,11 +59,12 @@ local lspconfig = require('lspconfig')
 
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 local luasnip = require 'luasnip'
+vim.lsp.enable 'bashls'
 
 local servers = {
   "lua_ls",
   "pyright",
-  "rust_analyzer"
+  "rust_analyzer",
 }
 
 for _, lsp in ipairs(servers) do
