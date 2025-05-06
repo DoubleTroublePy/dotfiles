@@ -20,11 +20,13 @@ syntax on                   " syntax highlighting
 filetype plugin on
 set cursorline              " highlight current cursorline
 set ttyfast                 " Speed up scrolling in Vim
-set spell                   " enable spell check (may need to download language package)
 
 set signcolumn=yes          " always show the column with status symbols
 nmap m :NERDTreeToggle<CR>  " open NERDTree with the m key
 let NERDTreeQuitOnOpen=1    " when opening a file close NERDTree
+
+nmap s :set spell!<cr>      " turn on and off spell checking
+nnoremap <silent> <esc> :noh<cr><esc>
 
 " Vim jump to the last position when reopening a file
 if has("autocmd")
