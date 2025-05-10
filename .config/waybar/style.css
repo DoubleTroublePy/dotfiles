@@ -7,6 +7,7 @@
     text-shadow:   none;
     transition-duration: 0s;
     min-height: 0;
+    background: rgba(40, 40, 40, 1);
 }
 
 window {
