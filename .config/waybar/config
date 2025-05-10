@@ -1,9 +1,10 @@
 {
+    "position": "bottom",
     "height": 22,
 
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "custom/sep", "network", "battery", "battery#bat2", "custom/sep", "tray"],
+    "modules-right": ["pulseaudio", "custom/sep", "network", "custom/sep-bat", "battery", "battery#bat2", "custom/sep", "tray"],
 
     "hyprland/workspaces": {
       "disable-scroll": true,
@@ -21,8 +22,8 @@
     },
     "battery": {
         "bat": "BAT0",
-        "format": " | batt: {capacity}%",
-        "format-charging": " | ac: {capacity}%",
+        "format": " batt: {capacity}%",
+        "format-charging": " ac: {capacity}%",
         "interval": 30,
         "states": {
             "warning": 25,
@@ -128,7 +129,14 @@
         "interval": 5
     },
     "custom/sep": {
-        "format": " | ",
+        "format": "{}",
+        "exec": "$HOME/.config/waybar/sep.sh",
+        "interval": "once",
+        "tooltip": false
+    },
+    "custom/sep-bat": {
+        "format": "{}",
+        "exec": "$HOME/.config/waybar/sep.sh --bat",
         "interval": "once",
         "tooltip": false
     },

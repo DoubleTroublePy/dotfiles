@@ -26,9 +26,11 @@ case $(echo "$cmd" | awk '{print toupper($0)}') in
     echo $sum
   ;;
   
+  #XXX: serius bug on subration instead of a-b-c=d is -a-b-c=d thus creating an
+  #     error
   'SUB' | '-')
-    sub=0
     for i in ${@:1:$#-1}; do
+      $i
       sub=$(calc "$sub-$i")
     done
     echo $sub
@@ -47,7 +49,8 @@ case $(echo "$cmd" | awk '{print toupper($0)}') in
       echo DIV support a max of 2 arguments
       exit
     fi
-    if [ $1 -eq '0' ] || [ $2 -eq '0' ]; then
+    #XXX: gives an error with floats
+    if [ $1 -eq 0 ] || [ $2 -eq 0 ]; then
       echo arguments cannot be 0
       exit
     fi
