@@ -1,3 +1,5 @@
+@import "colors.css";
+
 * {
     border:        none;
     border-radius: 0;
@@ -7,17 +9,17 @@
     text-shadow:   none;
     transition-duration: 0s;
     min-height: 0;    
+    
 }
 
 window {
-    color:      rgba(217, 216, 216, 1);
-    /*background: rgba(35, 31, 32, 0.7);*/
-    background: rgba(40, 40, 40, 1);
+    color:    @fg1;
+    background: @bg;
 }
 
 window#waybar.solo {
-    color:      rgba(217, 216, 216, 1);
-    background: rgba(35, 31, 32, 0.85);
+    color:    @fg1;
+    background: @bg;
 }
 
 #tray {
@@ -26,32 +28,32 @@ window#waybar.solo {
 
 #workspaces {
     margin: 0 5px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: @bg;
 }
 
 #workspaces button {
-    padding:    0 5px;
-    color:      rgba(128, 128, 128, 1);
-    border:     0.5px solid;
-    min-width: 0;
+  background-color:     @bg;
+  color:                @fg;
+  padding:    0 5px;
+  border:     0.5px solid @gray;
+  min-width: 0;
 }
 
-
-#workspaces button.visible {
-    background-color:     rgba(128, 128, 128, 1);
-    color:                rgba(0, 0, 0, 1);
+#workspaces button.visible, 
+#workspaces button.active
+{
+  background-color:     @fg4;
+  color:                @bg;
 }
 
 
 #workspaces button.active {
-    background-color:     rgba(128, 128, 128, 1);
-    color:                rgba(0, 0, 0, 1);
-    border-bottom: 3px solid rgba(255, 255, 255, 1);
+  border-bottom: 3px solid rgba(255, 255, 255, 1);
 }
 
 #workspaces button.urgent {
-    background-color:     rgba(238, 46, 36, 0.5);
-    color:                rgba(0, 0, 0, 1);
+    background-color:   @red;
+    color:              @fg;
 }
 /*
 #workspaces button:hover {
@@ -70,15 +72,15 @@ window#waybar.solo {
 }
 
 #battery.warning {
-   color:       rgba(255, 210, 4, 1);
+   color:     @yellow;
 }
 
 #battery.critical {
-    color:      rgba(238, 46, 36, 1);
+    color:    @red;
 }
 
 #battery.charging {
-    color:      rgba(217, 216, 216, 1);
+    color:    @fg1;
 }
 
 #custom-storage.warning {
@@ -90,5 +92,5 @@ window#waybar.solo {
 }
 
 #custom-sep {
-  color:        rgba(128, 128, 128, 1);
+  color:      @grey;
 }
