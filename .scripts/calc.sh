@@ -30,7 +30,6 @@ case $(echo "$cmd" | awk '{print toupper($0)}') in
   #     error
   'SUB' | '-')
     for i in ${@:1:$#-1}; do
-      $i
       sub=$(calc "$sub-$i")
     done
     echo $sub
