@@ -63,7 +63,8 @@ local luasnip = require 'luasnip'
 local servers = {
   "lua_ls",
   "pyright",
-  "rust_analyzer"
+  "rust_analyzer",
+  "ccls",
 }
 
 for _, lsp in ipairs(servers) do
