@@ -65,10 +65,6 @@ local servers = {
   "lua_ls",
   "pyright",
   "rust_analyzer",
-<<<<<<< HEAD
-  "ccls",
-=======
->>>>>>> bac3271996af4829bba0290497ccc7b0029a65a3
 }
 
 for _, lsp in ipairs(servers) do
