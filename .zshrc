@@ -128,7 +128,7 @@ export CLICOLOR_FORCE=1
 export COLORTERM=truecolor
 
 # import scripts
-source ~/.zshrc_fn
+#source ~/.zshrc_fn
 
 alias mv="mv -u"
 

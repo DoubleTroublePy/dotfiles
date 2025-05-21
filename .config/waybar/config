@@ -22,8 +22,8 @@
     },
     "battery": {
         "bat": "BAT0",
-        "format": " batt: {capacity}%",
-        "format-charging": " ac: {capacity}%",
+        "format": "batt: {capacity}%",
+        "format-charging": "ac: {capacity}%",
         "interval": 30,
         "states": {
             "warning": 25,
@@ -53,7 +53,7 @@
             "disconnected": ["󱘖"]
         },
         "interval": 1,
-        "on-click": "kitty -e nmtui",
+        "on-click-right": "kitty -e nmtui",
         "tooltip": true,
         "tooltip-format": "{essid} {ipaddr}\n{signaldBm} {bandwidthUpBits} {bandwidthDownBits} {frequency}"
     },
