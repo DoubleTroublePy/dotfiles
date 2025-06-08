@@ -1,6 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
+# XXX: i need to resolve this in some way 
+export LC_ALL=C.UTF-8
+
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export EDITOR=vim
@@ -14,6 +17,8 @@ setopt correct
 alias proton="$HOME/.proton.sh"
 # alias lsusb="for devlink in /dev/disk/by-id/usb*; do readlink -f ${devlink}; done"
 alias c="$HOME/.scripts/calc.sh"
+alias hypr="Hyprland"
+#sudo mount /dev/sda1 /mnt/data
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
