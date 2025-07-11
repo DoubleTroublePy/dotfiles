@@ -7,6 +7,8 @@ export LC_ALL=C.UTF-8
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export EDITOR=vim
+export DOCKER_HOST=unix:///run/user/1000/docker.sock
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -17,7 +19,8 @@ setopt correct
 alias proton="$HOME/.proton.sh"
 # alias lsusb="for devlink in /dev/disk/by-id/usb*; do readlink -f ${devlink}; done"
 alias c="$HOME/.scripts/calc.sh"
-alias hypr="Hyprland"
+alias hypr="cd /home/dtpy; Hyprland"
+#alias mkcdir="mkdir $1; cd $1"
 #sudo mount /dev/sda1 /mnt/data
 
 # Set list of themes to pick from when loading at random
