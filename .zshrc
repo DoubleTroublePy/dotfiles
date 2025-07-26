@@ -6,6 +6,8 @@ export LC_ALL=C.UTF-8
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+
+# paths
 export EDITOR=vim
 export DOCKER_HOST=unix:///run/user/1000/docker.sock
 
@@ -15,13 +17,13 @@ export DOCKER_HOST=unix:///run/user/1000/docker.sock
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="gnzh_custom"
 setopt correct
-#alias cls="clear"
+
+# alias
 alias proton="$HOME/.proton.sh"
 # alias lsusb="for devlink in /dev/disk/by-id/usb*; do readlink -f ${devlink}; done"
 alias c="$HOME/.scripts/calc.sh"
 alias hypr="cd /home/dtpy; Hyprland"
 #alias mkcdir="mkdir $1; cd $1"
-#sudo mount /dev/sda1 /mnt/data
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
