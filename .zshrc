@@ -9,7 +9,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 # paths
 export EDITOR=vim
-export DOCKER_HOST=unix:///run/user/1000/docker.sock
+#export DOCKER_HOST=unix:///run/user/1000/docker.sock
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
@@ -86,7 +86,6 @@ alias hypr="cd /home/dtpy; Hyprland"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
-
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -126,16 +125,16 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 export JQ_LIB_DIR=/usr/lib/libjq.so
 
 #scripts command
-alias srun="$HOME/.scripts/srun.sh"
+#alias srun="$HOME/.scripts/srun.sh"
 
 # matlab
-alias matlab="./.local/share/MATLAB/bin/matlab -nodesktop -nosplash -softwareopengl -r"
+#alias matlab="./.local/share/MATLAB/bin/matlab -nodesktop -nosplash -softwareopengl -r"
 # richweather
-alias richweather='python3 /usr/local/bin/richweather'
+#alias richweather='python3 /usr/local/bin/richweather'
 
 # true color term
-export CLICOLOR_FORCE=1
-export COLORTERM=truecolor
+#export CLICOLOR_FORCE=1
+#export COLORTERM=truecolor
 
 # import scripts
 #source ~/.zshrc_fn
