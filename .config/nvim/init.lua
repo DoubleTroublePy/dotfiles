@@ -39,7 +39,8 @@ vim.opt.wrap=true
 vim.opt.mouse = ""
 
 vim.call('plug#begin')
-Plug('ellisonleao/gruvbox.nvim')
+--Plug ('bluz71/vim-moonfly-colors')
+--Plug('ellisonleao/gruvbox.nvim')
 Plug('scrooloose/nerdtree')
 Plug('neovim/nvim-lspconfig')
 Plug('hrsh7th/nvim-cmp')
@@ -50,7 +51,8 @@ Plug('folke/which-key.nvim')
 vim.call('plug#end')
 
 vim.cmd('set background=dark')
-vim.cmd('colorscheme gruvbox')
+vim.cmd('colorscheme torte')
+--vim.cmd('colorscheme gruvbox')
 
 local lspconfig = require('lspconfig')
 --lspconfig.pyright.setup {}
