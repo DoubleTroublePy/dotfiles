@@ -140,6 +140,8 @@ export JQ_LIB_DIR=/usr/lib/libjq.so
 #source ~/.zshrc_fn
 
 alias mv="mv -u"
+alias twitch-dl="/mnt/data/jellyfin/media/vods/twitch-dl"
+alias poweroff="/home/dtpy/services.sh --stop; poweroff"
 
 # moebius
 #moebius (){

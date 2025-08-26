@@ -10,8 +10,8 @@ if [ "$#" -ne 1 ]; then
   exit 1
 fi
 
-PROTON_ROOT="/mnt/data/steam/steamapps/common/Proton - Experimental/"
-STEAM_ROOT="/mnt/data/steam"
+PROTON_ROOT="/mnt/personal/steam/steamapps/common/Proton - Experimental/"
+STEAM_ROOT="/mnt/personal/steam"
 PROTON_VER="Proton - Experimental"
 GAME_ROOT="$(dirname "$1")"
 GAME="$(basename "$1")"
