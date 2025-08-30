@@ -30,6 +30,7 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 export JQ_LIB_DIR=/usr/lib/libjq.so
 
 alias mv="mv -u"
+alias time="/usr/bin/time"
 
 # specific configurations
 case $HOST in
@@ -43,3 +44,12 @@ case $HOST in
     alias battery="cat /sys/class/power_supply/BAT0/capacity"
     ;;
 esac
+
+# fix cursor
+#echo -ne '\e[5 q'
+
+_fix_cursor() {
+  echo -ne '\e[5 q'
+}
+precmd_functions+=(_fix_cursor)
+
