@@ -16,9 +16,10 @@
         "tooltip": false
     },
     "clock": {
-        "format": "{:%a[%u] %d %b[%m] %H:%M}",
+        "format": "{:%a[%u] %d %b[%m] %T}",
         "tooltip": true,
         "tooltip-format": "{calendar}",
+        "interval": 1,
     },
     "battery": {
         "bat": "BAT0",

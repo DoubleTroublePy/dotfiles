@@ -257,7 +257,7 @@
     # layer = top
 
     # Set this to true to use X11 output on Wayland.
-    force_xwayland = true #false
+    force_xwayland = false
 
     ### Legacy
 
