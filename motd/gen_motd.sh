@@ -141,3 +141,7 @@ echo -e "  $B           NTP $G:$W $NTP_SERVICE_STATUS ($TIME_SYNC_STATUS)      "
 echo -e "  $B   SYSTEM TIME $G:$W $LOCAL_TIME ($TIME_ZONE)                     " >> $motd
 echo -e "  $G--------------------------------------------------------------------" >> $motd
 echo -e "$N" >> $motd
+
+#==============================================================================  
+# forked from:
+# https://github.com/jrmileham/arch-motd/tree/master

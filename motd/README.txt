@@ -18,3 +18,5 @@ add the following line to the '/etc/pam.d/system-login' before line 1
 0+| session    optional   pam_exec.so	   /bin/gen_motd.sh
 1 | session    optional   pam_motd.so
 
+file shamelessy forked from https://github.com/jrmileham/arch-motd/tree/master
+
