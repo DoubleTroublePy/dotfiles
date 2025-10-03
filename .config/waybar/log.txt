@@ -1,0 +1,65 @@
+[02/09/2025 10:41] [02/09/2025 18:21] [07:40] <graziano.menneas> :: schifo
+[02/09/2025 10:41] [02/09/2025 18:21] [07:40] <m0sk1> :: project working asd
+[02/09/2025 14:45] [02/09/2025 18:23] [03:38] <matteo.digregorio> :: csai
+[02/09/2025 14:45] [02/09/2025 18:23] [03:38] <matte_cucchiara> :: pulito il bal
+[03/09/2025 15:27] [03/09/2025 16:54] [01:27] <matte_cucchiara> :: login, then logout
+[04/09/2025 14:27] [04/09/2025 18:03] [03:36] <matte_cucchiara> :: discussione roba lab
+[04/09/2025 14:43] [04/09/2025 18:20] [03:37] <matteo.digregorio> :: working on XAI
+[04/09/2025 14:43] [04/09/2025 16:40] [01:57] <giacof0> :: pulito controller
+[04/09/2025 17:27] [04/09/2025 18:26] [00:59] <giacof0> :: altre cose
+[05/09/2025 16:18] [05/09/2025 18:12] [01:54] <giacof0> :: soldering
+[05/09/2025 16:19] [05/09/2025 16:44] [00:25] <graziano.menneas> :: telefono
+[06/09/2025 10:24] [06/09/2025 13:36] [03:12] <claudio.capobianchi> :: apertura sabatina e pulizia
+[08/09/2025 12:03] [08/09/2025 12:22] [00:19] <m0sk1> :: cambiato disco pc
+[08/09/2025 14:49] [08/09/2025 19:18] [04:29] <matteo.digregorio> :: working on xai
+[08/09/2025 15:00] [08/09/2025 15:42] [00:42] <giacof0> :: volato telefoni irrecuperabili
+[08/09/2025 15:16] [08/09/2025 19:17] [04:01] <matte_cucchiara> :: riflessioni asdose
+[09/09/2025 15:31] [09/09/2025 18:30] [02:59] <matte_cucchiara> :: pulito pc
+[09/09/2025 17:46] [09/09/2025 18:30] [00:44] <giacof0> :: pulito 386
+[13/09/2025 08:57] [13/09/2025 13:11] [04:14] <claudio.capobianchi> :: Found 24 Gb of RAM lol
+[15/09/2025 09:20] [15/09/2025 12:48] [03:28] <claudio.capobianchi> :: tested and taralled RAM
+[15/09/2025 10:05] [15/09/2025 12:38] [02:33] <graziano.menneas> :: BUROCRACY
+[15/09/2025 11:51] [15/09/2025 13:33] [01:42] <giacof0> :: manutenzione bici
+[15/09/2025 13:00] [15/09/2025 18:59] [05:59] <jetstreamlarry> :: r&d
+[15/09/2025 14:10] [15/09/2025 17:12] [03:02] <enrico.franciscono> :: nada
+[16/09/2025 08:42] [16/09/2025 18:48] [10:06] <enrico.franciscono> :: bubble 80, bakcup flash, saldato, sviluppato
+[16/09/2025 09:16] [16/09/2025 13:13] [03:57] <claudio.capobianchi> :: ram test still workint on it
+[16/09/2025 11:32] [16/09/2025 17:40] [06:08] <jetstreamlarry> :: nextcloud wok
+[16/09/2025 14:55] [16/09/2025 17:53] [02:58] <claudio.capobianchi> :: discovered than b556 is broken, 24 gb of ram are ok
+[16/09/2025 16:00] [16/09/2025 18:47] [02:47] <giacof0> :: manutenzione di varie cose
+[17/09/2025 07:56] [17/09/2025 13:42] [05:46] <enrico.franciscono> :: niente
+[17/09/2025 10:41] [17/09/2025 13:24] [02:43] <giacof0> :: ripristinato gli imac
+[17/09/2025 13:02] [17/09/2025 18:50] [05:48] <jetstreamlarry> :: more nextcloud
+[18/09/2025 10:47] [18/09/2025 16:55] [06:08] <jetstreamlarry> :: shortener
+[18/09/2025 14:55] [18/09/2025 18:12] [03:17] <enrico.franciscono> :: linktree
+[19/09/2025 11:51] [18/09/2025 15:51] [04:00] <matteo.digregorio> :: farming ore
+[19/09/2025 11:52] [19/09/2025 11:52] [00:00] <matte_cucchiara> :: Laureatomi
+[19/09/2025 18:58] [19/09/2025 19:19] [00:21] <matte_cucchiara> :: laurea magistrale
+[19/09/2025 18:58] [19/09/2025 19:03] [00:05] <matteo.digregorio> :: Doppia laurea
+[22/09/2025 08:39] [22/09/2025 14:27] [05:48] <fabrizio.brutti> :: Put bios battery into 550, 581, 583, 553, 552, 580, 578. 533 does not work
+[22/09/2025 09:40] [22/09/2025 12:30] [02:50] <claudio.capobianchi> :: replaced cmos batteries for donation
+[22/09/2025 12:10] [22/09/2025 16:44] [04:34] <enrico.franciscono> :: riunione
+[22/09/2025 12:12] [22/09/2025 14:02] [01:50] <Lawrence_C.I.> :: work
+[22/09/2025 14:57] [22/09/2025 15:56] [00:59] <nicolas.campailla> :: Aggiunto CMOS e sistemato robe inventariate male
+[22/09/2025 16:03] [22/09/2025 16:20] [00:17] <gabriele.vignale> :: presenza
+[23/09/2025 10:15] [23/09/2025 11:20] [01:05] <jetstreamlarry> :: nextcloud
+[23/09/2025 14:51] [23/09/2025 19:15] [04:24] <fabrizio.brutti> :: esperimenti con pasta termica radioattiva
+[23/09/2025 14:51] [23/09/2025 19:11] [04:20] <jetstreamlarry> :: she next on my cloud
+[23/09/2025 15:49] [23/09/2025 20:49] [05:00] <enrico.franciscono> :: cazzegio + riunione
+[23/09/2025 16:42] [23/09/2025 19:16] [02:34] <giacof0> :: prep bubble80
+[23/09/2025 17:28] [23/09/2025 18:04] [00:36] <nizzi.oua> :: Lingua inglese
+[24/09/2025 11:35] [24/09/2025 12:59] [01:24] <nizzi.oua> :: Provato a riparare il 533, ma niente risultati
+[25/09/2025 10:03] [25/09/2025 11:05] [01:02] <giacof0> :: prep bubble80
+[25/09/2025 10:36] [25/09/2025 14:29] [03:53] <fabrizio.brutti> :: things
+[25/09/2025 10:36] [25/09/2025 18:13] [07:37] <jetstreamlarry> :: finished nc updates and general work on boulangerie
+[25/09/2025 14:33] [25/09/2025 17:51] [03:18] <enrico.franciscono> :: crauto
+[25/09/2025 14:35] [25/09/2025 16:33] [01:58] <matte_cucchiara> :: pc eto
+[25/09/2025 16:10] [25/09/2025 16:33] [00:23] <fabrizio.brutti> :: yogut
+[25/09/2025 16:04] [25/09/2025 18:58] [02:54] <giacof0> :: prep bubble80
+[26/09/2025 11:36] [26/09/2025 18:54] [07:18] <giacof0> :: pep bubble80
+[26/09/2025 14:51] [26/09/2025 18:44] [03:53] <matte_cucchiara> :: eopc
+[26/09/2025 14:51] [26/09/2025 18:55] [04:04] <matteo.digregorio> :: preparando per evento
+[26/09/2025 15:34] [26/09/2025 17:28] [01:54] <fabrizio.brutti> :: Aemp o updae audio daves on eo pc
+[26/09/2025 15:59] [26/09/2025 16:13] [00:14] <lorenzo.filomena> :: saWEEEluti <3
+[26/09/2025 16:27] [26/09/2025 18:06] [01:39] <elisabetta.anzaldi> :: nulla
+[27/09/2025 08:28] [----------------] [INLAB] <m0sk1>

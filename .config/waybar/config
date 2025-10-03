@@ -4,7 +4,7 @@
 
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "custom/sep", "network", "custom/sep-bat", "battery", "battery#bat2", "custom/sep", "tray"],
+    "modules-right": ["custom/inlab", "custom/sep", "pulseaudio", "custom/sep", "network", "custom/sep-bat", "battery", "battery#bat2", "custom/sep", "tray"],
 
     "hyprland/workspaces": {
       "disable-scroll": true,
@@ -139,6 +139,12 @@
         "exec": "/tmp/test blub",
         "param": "blah",
         "interval": 5
+    },
+    "custom/inlab": {
+        "format": "inlab: {}",
+        "exec": "~/.config/waybar/inlab.sh",
+        "interval": 900,
+        "tooltip": false
     },
     "custom/sep": {
         "format": "{}",
