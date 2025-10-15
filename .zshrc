@@ -39,9 +39,8 @@ case $HOST in
     alias twitch-dl="/mnt/data/pods/jellyfin/media/vods/twitch-dl"
     alias poweroff="/home/dtpy/services.sh --stop; poweroff"
     ;;
-
-  "archtop-dpty")
-    alias battery="cat /sys/class/power_supply/BAT0/capacity"
+  "archtop-dtpy")
+    alias battery="echo \"     $(cat /sys/class/power_supply/BAT0/capacity)%\" "
     ;;
 esac
 
