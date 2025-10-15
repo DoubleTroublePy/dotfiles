@@ -1,6 +1,10 @@
 # XXX: i need to resolve this in some way 
 export LC_ALL=C.UTF-8
 
+# gpg shit
+GPG_TTY=$(tty)
+export GPG_TTY
+
 # oh-my-zsh configurations
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -20,6 +24,7 @@ export EDITOR=vim
 alias proton="$HOME/.proton.sh"
 alias c="$HOME/.scripts/calc.sh"
 alias hypr="cd /home/dtpy; Hyprland"
+alias motd="cat /etc/motd"
 #alias mkcdir="mkdir $1; cd $1"
 
 # neovim
