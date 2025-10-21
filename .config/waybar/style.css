@@ -55,12 +55,12 @@ window#waybar.solo {
     background-color:   @red;
     color:              @fg;
 }
-/*
+
 #workspaces button:hover {
     background-color:      rgba(217, 216, 216, 0.5);
     color:                rgba(0, 0, 0, 1);
 }
-*/
+
 #mode, #battery, #cpu, #memory, #network, #pulseaudio, #idle_inhibitor, #backlight, #custom-storage, #custom-spotify, #custom-weather, #custom-mail {
     margin:     0px 5px 0px 5px;
     min-width:  25px;

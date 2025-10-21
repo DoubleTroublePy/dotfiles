@@ -35,6 +35,7 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 export JQ_LIB_DIR=/usr/lib/libjq.so
 
 alias mv="mv -u"
+alias feh="feh --scale-down"
 alias time="/usr/bin/time"
 
 # specific configurations
