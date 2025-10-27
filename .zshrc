@@ -42,6 +42,7 @@ local_config='.zshrc_local'
 if [ ! -f $local_config ]; then
   touch $local_config
 fi
+source $local_config
 
 # fix cursor
 #echo -ne '\e[5 q'
