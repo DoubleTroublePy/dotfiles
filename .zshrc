@@ -38,17 +38,10 @@ alias mv="mv -u"
 alias feh="feh --scale-down"
 alias time="/usr/bin/time"
 
-# specific configurations
-case $HOST in
-  # archlinux-home
-  "archlinux-home")
-    alias twitch-dl="/mnt/data/pods/jellyfin/media/vods/twitch-dl"
-    alias poweroff="/home/dtpy/services.sh --stop; poweroff"
-    ;;
-  "archtop-dtpy")
-    alias battery="echo \"     $(cat /sys/class/power_supply/BAT0/capacity)%\" "
-    ;;
-esac
+local_config='.zshrc_local'
+if [ ! -f $local_config ]; then
+  touch $local_config
+fi
 
 # fix cursor
 #echo -ne '\e[5 q'
