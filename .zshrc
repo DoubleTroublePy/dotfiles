@@ -24,6 +24,7 @@ export EDITOR=vim
 alias proton="$HOME/.proton.sh"
 alias hypr="cd /home/dtpy; Hyprland"
 alias motd="cat /etc/motd"
+alias lock="vlock"
 #alias mkcdir="mkdir $1; cd $1"
 
 # neovim
