@@ -25,6 +25,8 @@
 file=$1
 file_name="${file%.*}"
 tmp_file=".tmp_$file_name.png"
+work_file=$file
+rmpng=0
 
 # remove a file only if exist
 function srm {
@@ -36,33 +38,35 @@ function srm {
 if [[ $1 != *.png ]]; then
   echo "file is not a png."
   echo "converting ..."
-  ERROR=$(magick "$file" "$tmp_file" 2>&1 >/dev/null)
-  #magick "$file" "$tmp_file"
+  echo -e "└───"
+  magick "$file" "$tmp_file"
+  work_file=$tmp_file
+  echo -e "┌───"
+  rmpng=1
 fi
 
 # if for whatever the conversion fails alt the program without doing anything
 if [ $? -ne 0 ]; then
   echo "!!! conversion failed !!!"
-  echo -e "└───"
-  echo -e "$ERROR"
-  echo -e "┌───"
   echo -e "\e[4;37mthis is not our responsibility, this are outsourced mages\e[0m"
   echo "+++ goodbye +++"
   exit 1
 fi
 
-#TODO: give an option to not preserve the original file
-# preserve the original file
-mv "$file" ".$file.bkp"
-
 # pad the png with a transparent box
 echo "doing the magic ..."
-magick "$tmp_file" \
+magick "$work_file" \
   -background none \
   -gravity center \
   -resize 5000x5000 \
   -extent 5000x5000 \
-  "$file_name.png"
+  ".tmp.$file_name.png"
+
+#TODO: give an option to not preserve the original file
+# preserve the original file
+mv "$file" ".$file.bkp"
+mv ".tmp.$file_name.png" "$file_name.png"
+srm "$tmp_file"
 
 if [ $? -ne 0 ]; then
   echo "!!! magic failed !!!"
@@ -71,13 +75,12 @@ if [ $? -ne 0 ]; then
   echo "the mage is cleaning the mess ..."
   mv ".$file.bkp" "$file"
   srm "$tmp_file"
-  srm "$file_name.png"
+  if [[ rmpng == 1 ]]; then srm "$file_name.png"; fi
   echo "we are sorry our mage couldn't do the trick :("
   echo "+++ better luck next time +++"
   exit 1
 fi
 
-srm "$tmp_file"
 echo "+++ magic done +++"
 echo -e "\e[4;37mps: the old file still exist under the name .$file.bkp\e[0m"
 
