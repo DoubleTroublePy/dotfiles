@@ -2,6 +2,16 @@
 GPG_TTY=$(tty)
 export GPG_TTY
 
+# usb simplify
+function mnt() {
+  unm=""
+  if [[ "$2" == "u" ]]; then
+    unm="un"
+  fi
+  udisksctl ${unm}mount -p block_devices/$1
+}
+
+
 # watch file
 source $HOME/.scripts/tex2pdf.sh
 

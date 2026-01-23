@@ -305,14 +305,14 @@
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#282828"
     foreground = "#ebdbb2"
-    timeout = 5
+    timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
     #new_icon = /path/to/icon
 
 [urgency_normal]
     background = "#282828"
     foreground = "#ebdbb2"
-    timeout = 5
+    timeout = 20
     # Icon for notifications with normal urgency, uncomment to enable
     #new_icon = /path/to/icon
 
@@ -397,9 +397,10 @@
 #    msg_urgency = critical
 #    fullscreen = show
 
-#[espeak]
-#    summary = "*"
-#    script = dunst_espeak.sh
+[espeak]
+      appname = Telegram Desktop
+      summary = "*"
+      script = /home/dtpy/.config/dunst/dunst_espeak.sh
 
 #[script-test]
 #    summary = "*script*"
