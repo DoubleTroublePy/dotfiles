@@ -397,10 +397,10 @@
 #    msg_urgency = critical
 #    fullscreen = show
 
-[espeak]
-      appname = Telegram Desktop
-      summary = "*"
-      script = /home/dtpy/.config/dunst/dunst_espeak.sh
+#[espeak]
+#      appname = Telegram Desktop
+#      summary = "Michela"
+#      script = /home/dtpy/.config/dunst/dunst_espeak.sh
 
 #[script-test]
 #    summary = "*script*"

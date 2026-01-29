@@ -11,6 +11,14 @@ function mnt() {
   udisksctl ${unm}mount -p block_devices/$1
 }
 
+function ptar() {
+  tar $1 - $2 -P | pv -s $(du -sb $2 | awk '{print $1}') | bzip2 > $3
+}
+
+function ptarc() {
+  tar $1 - $2 -P | pv -s $(du -sb $2 | awk '{print $1}') | gpg -c --passphrase > "./$3/$2.tar.bz.gpg"
+}
+
 
 # watch file
 source $HOME/.scripts/tex2pdf.sh
@@ -35,6 +43,7 @@ alias proton="$HOME/.proton.sh"
 alias hypr="cd /home/dtpy; Hyprland"
 alias motd="cat /etc/motd"
 alias lock="vlock"
+alias allarm="at $1 -f $HOME/.allarm"
 #alias mkcdir="mkdir $1; cd $1"
 
 # neovim
@@ -48,7 +57,7 @@ alias mv="mv -u"
 alias feh="feh --scale-down"
 alias time="/usr/bin/time"
 
-local_config='.zshrc_local'
+local_config="$HOME/.zshrc_local"
 if [ ! -f $local_config ]; then
   touch $local_config
 fi
