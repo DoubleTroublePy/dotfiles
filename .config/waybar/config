@@ -23,7 +23,7 @@
         "tooltip": false
     },
     "clock": {
-        "format": "{:%a[%u] %d %b[%m] %T}",
+        "format": "{:%a[%u] %b %T %Y-%m-%d}",
         "tooltip": true,
         "tooltip-format": "{calendar}",
         "interval": 1,

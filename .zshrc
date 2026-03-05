@@ -1,3 +1,8 @@
+# ssh shit
+eval $(ssh-agent) 1> /dev/null 2>&1
+ssh-add ~/.ssh/id_alarielle.pub 1> /dev/null 2>&1
+ssh-add ~/.ssh/id_ed25519.pub 1> /dev/null 2>&1
+
 # gpg shit
 GPG_TTY=$(tty)
 export GPG_TTY
@@ -15,8 +20,12 @@ function ptar() {
   tar $1 - $2 -P | pv -s $(du -sb $2 | awk '{print $1}') | bzip2 > $3
 }
 
+function ptarcp() {
+  tar $1 - $2 -P | pv -s $(du -sb $2 | awk '{print $1}') | gpg -c --passphrase > "./$3.tar.bz.gpg"
+}
+
 function ptarc() {
-  tar $1 - $2 -P | pv -s $(du -sb $2 | awk '{print $1}') | gpg -c --passphrase > "./$3/$2.tar.bz.gpg"
+  tar $1 - $2 -P | pv -s $(du -sb $2 | awk '{print $1}') | gpg -c > "./$3.tar.bz.gpg"
 }
 
 
