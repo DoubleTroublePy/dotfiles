@@ -1,7 +1,12 @@
 # ssh shit
-eval $(ssh-agent) 1> /dev/null 2>&1
-ssh-add ~/.ssh/id_alarielle.pub 1> /dev/null 2>&1
-ssh-add ~/.ssh/id_ed25519.pub 1> /dev/null 2>&1
+function ssh-michela() {
+  eval $(ssh-agent)
+  ssh-add ~/.ssh/id_alarielle
+}
+function ssh-default() {
+  eval $(ssh-agent)
+  ssh-add ~/.ssh/id_ed25519
+}
 
 # gpg shit
 GPG_TTY=$(tty)
@@ -46,8 +51,10 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR=vim
 
 # General user configuration
-# alias
+# custom vars
+export TERM=xterm-256color
 
+# alias
 alias proton="$HOME/.proton.sh"
 alias hypr="cd /home/dtpy; Hyprland"
 alias motd="cat /etc/motd"
