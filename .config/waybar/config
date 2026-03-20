@@ -4,7 +4,7 @@
 
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["hyprland/submap", "custom/sep", "custom/inlab", "custom/sep", "pulseaudio", "custom/sep", "network", "custom/sep-bat", "battery", "battery#bat2","custom/sep", "tray"],
+    "modules-right": ["hyprland/submap", "custom/sep", "custom/temp", "custom/sep", "custom/inlab", "custom/sep", "pulseaudio", "custom/sep", "network", "custom/sep-bat", "battery", "battery#bat2","custom/sep", "tray"],
 
     "hyprland/workspaces": {
       "disable-scroll": true,
@@ -146,6 +146,12 @@
         "exec": "/tmp/test blub",
         "param": "blah",
         "interval": 5
+    },
+    "custom/temp": {
+        "format": "{}",
+        "exec": "temp-read",
+        "interval": 300,
+        "tooltip": false
     },
     "custom/inlab": {
         "format": "inlab: {}",
