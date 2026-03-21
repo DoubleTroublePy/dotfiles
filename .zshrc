@@ -41,7 +41,7 @@ source $HOME/.scripts/tex2pdf.sh
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="gnzh_custom"
+ZSH_THEME="jonathan"
 setopt correct
 
 plugins=(git)
@@ -67,6 +67,7 @@ alias vvim="\vim"
 alias vim="nvim"
 alias hx="helix"
 export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH="$PATH:/bin"
 export JQ_LIB_DIR=/usr/lib/libjq.so
 
 alias mv="mv -u"
