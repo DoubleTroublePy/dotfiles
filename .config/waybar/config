@@ -4,7 +4,7 @@
 
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["hyprland/submap", "custom/sep", "custom/temp", "custom/sep", "custom/inlab", "custom/sep", "pulseaudio", "custom/sep", "network", "custom/sep-bat", "battery", "battery#bat2","custom/sep", "tray"],
+    "modules-right": ["hyprland/submap", "custom/sep", "hyprland/language", "custom/sep", "custom/temp", "custom/sep", "pulseaudio", "custom/sep", "network", "custom/sep-bat", "battery", "battery#bat2","custom/sep", "tray"],
 
     "hyprland/workspaces": {
       "disable-scroll": true,
@@ -17,6 +17,10 @@
       "max-length": 30,
       "tooltip": false,
       "on-click" : "hyprctl dispatch submap reset"
+    },
+    "hyprland/language": {
+      "format-en": "en",
+      "format-en-colemak": "ck"
     },
     "sway/window": {
         "max-length": 80,

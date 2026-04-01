@@ -22,15 +22,19 @@ function mnt() {
 }
 
 function ptar() {
-  tar $1 - $2 -P | pv -s $(du -sb $2 | awk '{print $1}') | bzip2 > $3
+  tar $1 - $3 -P | pv -s $(du -sb $3 | awk '{print $1}') | > $2
+}
+
+function pztar() {
+  tar $1 - $3 -P | pv -s $(du -sb $3 | awk '{print $1}') | bzip2 > $2
 }
 
 function ptarcp() {
-  tar $1 - $2 -P | pv -s $(du -sb $2 | awk '{print $1}') | gpg -c --passphrase > "./$3.tar.bz.gpg"
+  tar $1 - $3 -P | pv -s $(du -sb $3 | awk '{print $1}') | gpg -c --passphrase > "./$2.tar.bz.gpg"
 }
 
 function ptarc() {
-  tar $1 - $2 -P | pv -s $(du -sb $2 | awk '{print $1}') | gpg -c > "./$3.tar.bz.gpg"
+  tar $1 - $3 -P | pv -s $(du -sb $3 | awk '{print $1}') | gpg -c > "./$2.tar.bz.gpg"
 }
 
 
@@ -68,6 +72,7 @@ alias vim="nvim"
 alias hx="helix"
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$PATH:/bin"
+export PATH="$PATH:/home/dtpy/.local/share/gem/ruby/3.4.0/bin"
 export JQ_LIB_DIR=/usr/lib/libjq.so
 
 alias mv="mv -u"
