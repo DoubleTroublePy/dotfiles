@@ -9,7 +9,6 @@
     text-shadow:   none;
     transition-duration: 0s;
     min-height: 0;    
-    
 }
 
 window {
@@ -24,6 +23,14 @@ window#waybar.solo {
 
 #tray {
   margin-right: 5px;
+}
+
+#tray menu {
+    background: @bg;
+}
+
+#tray menu menuitem:hover {
+  background-color: @bg1;
 }
 
 #workspaces {
