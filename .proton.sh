@@ -11,8 +11,8 @@ if [ "$#" -ne 1 ]; then
 fi
 
 PROTON_VER="Proton Hotfix"
-PROTON_ROOT="/mnt/personal/steam/steamapps/common/$PROTON_VER/"
-STEAM_ROOT="/mnt/personal/steam"
+PROTON_ROOT="/home/dtpy/.steam/steamapps/common/$PROTON_VER/"
+STEAM_ROOT="/home/dtpy/.steam"
 GAME_ROOT="$(dirname "$1")"
 GAME="$(basename "$1")"
 

@@ -1,13 +1,3 @@
-# ssh shit
-function ssh-michela() {
-  eval $(ssh-agent)
-  ssh-add ~/.ssh/id_alarielle
-}
-function ssh-default() {
-  eval $(ssh-agent)
-  ssh-add ~/.ssh/id_ed25519
-}
-
 # gpg shit
 GPG_TTY=$(tty)
 export GPG_TTY
@@ -37,7 +27,6 @@ function ptarc() {
   tar $1 - $3 -P | pv -s $(du -sb $3 | awk '{print $1}') | gpg -c > "./$2.tar.bz.gpg"
 }
 
-
 # watch file
 source $HOME/.scripts/tex2pdf.sh
 
@@ -45,10 +34,10 @@ source $HOME/.scripts/tex2pdf.sh
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="jonathan"
+ZSH_THEME="fishy"
 setopt correct
 
-plugins=(git)
+plugins=(git zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # paths
@@ -92,4 +81,5 @@ _fix_cursor() {
   echo -ne '\e[5 q'
 }
 precmd_functions+=(_fix_cursor)
+
 
