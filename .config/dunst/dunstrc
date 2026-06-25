@@ -364,6 +364,17 @@
 # the desktop-entry won't get localized.
 #
 # SCRIPTING
+
+[play_sound]
+  summary = "*"      
+  script = /home/dtpy/.config/dunst/alert.sh
+
+#[espeak]
+#      appname = Telegram Desktop
+#      summary = "Michela"
+#      script = /home/dtpy/.config/dunst/dunst_espeak.sh
+
+
 # You can specify a script that gets run when the rule matches by
 # setting the "script" option.
 # The script will be called as follows:

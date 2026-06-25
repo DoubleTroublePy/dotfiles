@@ -1,4 +1,11 @@
 colorscheme torte
+
+call plug#begin('~/.config/nvim')
+  " Plugin Section
+  Plug 'scrooloose/nerdtree'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
+
 set nocompatible            " disable compatibility to old-time vi
 set showmatch               " show matching 
 set ignorecase              " case insensitive  
@@ -24,6 +31,10 @@ let NERDTreeQuitOnOpen=1    " when opening a file close NERDTree
 
 nmap s :set spell!<cr>      " turn on and off spell checking
 nnoremap <silent> <esc> :noh<cr><esc>
+
+" Use <Tab> and <S-Tab> to navigate the completion list
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 " Vim jump to the last position when reopening a file
 if has("autocmd")

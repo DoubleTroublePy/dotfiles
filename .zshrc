@@ -56,8 +56,9 @@ alias allarm="at $1 -f $HOME/.allarm"
 #alias mkcdir="mkdir $1; cd $1"
 
 # neovim
-alias vvim="\vim"
-alias vim="nvim"
+alias v="nvim"
+alias sv="sudo -E nvim"
+
 alias hx="helix"
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$PATH:/bin"

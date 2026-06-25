@@ -11,7 +11,7 @@ if [ "$#" -ne 1 ]; then
 fi
 
 PROTON_VER="Proton Hotfix"
-PROTON_ROOT="/home/dtpy/.steam/steamapps/common/$PROTON_VER/"
+PROTON_ROOT="/home/dtpy/.local/share/Steam/steamapps/common/$PROTON_VER/"
 STEAM_ROOT="/home/dtpy/.steam"
 GAME_ROOT="$(dirname "$1")"
 GAME="$(basename "$1")"
@@ -22,4 +22,4 @@ mkdir -p "$PROTON_ROOT/$GAME"
 export STEAM_COMPAT_DATA_PATH="$PROTON_ROOT/$GAME"
 export STEAM_COMPAT_CLIENT_INSTALL_PATH="$STEAM_ROOT"
 
-"$STEAM_ROOT/steamapps/common/$PROTON_VER/proton" run "$1"
+"/home/dtpy/.local/share/Steam/steamapps/common/$PROTON_VER/proton" run "$1"
