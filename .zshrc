@@ -1,3 +1,6 @@
+# nix home-manager
+. $HOME/.nix-profile/etc/profile.d/hm-session-vars.sh
+
 # gpg shit
 GPG_TTY=$(tty)
 export GPG_TTY
