@@ -4,7 +4,7 @@
 
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["hyprland/submap", "custom/sep", "hyprland/language", "custom/sep", "custom/temp", "custom/sep", "pulseaudio", "custom/sep", "network", "custom/sep-bat", "battery", "battery#bat2","custom/sep", "tray"],
+    "modules-right": ["hyprland/submap", "custom/sep", "hyprland/language", "custom/sep", "pulseaudio", "custom/sep", "network", "custom/sep-bat", "battery", "battery#bat2","custom/sep", "tray"],
 
     "hyprland/workspaces": {
       "disable-scroll": true,
@@ -151,9 +151,9 @@
         "param": "blah",
         "interval": 5
     },
-    "custom/temp": {
-        "format": "{}",
-        "exec": "~/.config/waybar/temp-read.sh",
+    "custom/simble": {
+        "format": "☽◯☾",
+        "exec": "",
         "interval": 300,
         "tooltip": false
     },

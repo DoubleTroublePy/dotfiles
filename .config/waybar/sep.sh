@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 root_bat="/sys/class/power_supply"
 bat=$(ls $root_bat | grep BAT | wc -l)
