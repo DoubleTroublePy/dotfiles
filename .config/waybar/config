@@ -30,7 +30,7 @@
         "format": "{:%a[%u] %b %T %Y-%m-%d}",
         "tooltip": true,
         "tooltip-format": "{calendar}",
-        "interval": 1,
+        "interval": 1
     },
     "battery": {
         "bat": "BAT0",
