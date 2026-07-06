@@ -44,7 +44,7 @@ plugins=(git zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # paths
-export EDITOR=vim
+export EDITOR=nvim
 
 # General user configuration
 # custom vars
