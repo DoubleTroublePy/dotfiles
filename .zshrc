@@ -52,7 +52,7 @@ export TERM=xterm-256color
 
 # alias
 alias proton="$HOME/.proton.sh"
-alias hypr="cd /home/dtpy; Hyprland"
+alias hypr="cd /home/dtpy; start-hyprland"
 alias motd="cat /etc/motd"
 alias lock="vlock"
 alias allarm="at $1 -f $HOME/.allarm"

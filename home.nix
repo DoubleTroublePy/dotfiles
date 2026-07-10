@@ -28,6 +28,8 @@
   # environment.
   home.packages = with pkgs; [
     devenv
+    dialog
+    librewolf
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -52,7 +54,6 @@
     # ".screenrc".source = dotfiles/screenrc;
     "dtpy".source = ~/dotfiles/dtpy;
     ".config/colors.css".source = ~/dotfiles/.config/colors.css;
-    ".config/dunst".source = ~/dotfiles/.config/dunst;
     ".config/hypr".source = ~/dotfiles/.config/hypr;
     ".config/kitty".source = ~/dotfiles/.config/kitty;
     ".config/nvim".source = ~/dotfiles/.config/nvim;
