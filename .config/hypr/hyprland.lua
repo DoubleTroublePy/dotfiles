@@ -185,9 +185,10 @@ local mainMod = "SUPER"
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({mode = "maximized", action = "toggle"}))
 hl.bind(mainMod .. " + CTRL + F", hl.dsp.window.fullscreen({mode = "fullscreen", action = "toggle"}))
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
-hl.bind(mainMod .. " + CTRL + Q", hl.dsp.window.kill())
+hl.bind(mainMod .. " + CTRL + SHIFT + Q", hl.dsp.window.kill())
 hl.bind(mainMod .. " + S", hl.dsp.workspace.swap_monitors({ monitor1 = "DP-1", monitor2 = "DP-2" }))
-hl.bind(mainMod .. "+ SHIFT + S", hl.dsp.exec_cmd("grim -g \"$(slurp -d)\" - | wl-copy; wl-paste > $(echo $HOME)/Pictures/screenshots/$(date +'screenshot_%Y-%m-%d-%H%M%S.png'"))
+-- hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("grim -g \"$(slurp -d)\" - | wl-copy; wl-paste > $(echo $HOME)/Pictures/screenshots/$(date +'screenshot_%Y-%m-%d-%H%M%S.png')"))
+hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("grim -g \"$(slurp)\" - | wl-copy; wl-paste > $(echo $HOME)/Pictures/screenshots/$(date +'screenshot_%Y-%m-%d-%H%M%S.png')"))
 
 hl.bind("CTRL + ALT + up",    hl.dsp.exec_cmd("python $HOME/.config/hypr/rotate.py 0"))
 hl.bind("CTRL + ALT + left",   hl.dsp.exec_cmd("python $HOME/.config/hypr/rotate.py 1"))
