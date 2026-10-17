@@ -1,6 +1,10 @@
 # nix home-manager
 . $HOME/.nix-profile/etc/profile.d/hm-session-vars.sh
 
+# path
+export PATH="$PATH:/home/dtpy/.cargo/bin"
+
+
 # gpg shit
 GPG_TTY=$(tty)
 export GPG_TTY
@@ -56,7 +60,7 @@ alias hypr="cd /home/dtpy; start-hyprland"
 alias motd="cat /etc/motd"
 alias lock="vlock"
 alias allarm="at $1 -f $HOME/.allarm"
-#alias mkcdir="mkdir $1; cd $1"
+alias ollamaq="ollama run qwen2.5-coder:1.5b"  
 
 # neovim
 alias v="nvim"

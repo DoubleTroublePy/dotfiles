@@ -29,6 +29,7 @@
   home.packages = with pkgs; [
     devenv
     dialog
+    superfile
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -59,6 +60,7 @@
     ".config/wofi".source = ~/dotfiles/.config/wofi;
     ".config/dunst".source = ~/dotfiles/.config/dunst;
     ".config/waybar".source = ~/dotfiles/.config/waybar;
+    ".config/sway".source = ~/dotfiles/.config/sway;
     # ".config/".source = ~/dotfiles/.config/;
 
           

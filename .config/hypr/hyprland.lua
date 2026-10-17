@@ -214,10 +214,10 @@ hl.bind(mainMod .. " + up",    hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + down",  hl.dsp.focus({ direction = "down" }))
 
 -- Move window with mainMod + arrow keys
-hl.bind("SHIFT + left",  hl.dsp.window.move({ direction = "left" }))
-hl.bind("SHIFT + right", hl.dsp.window.move({ direction = "right" }))
-hl.bind("SHIFT + up",    hl.dsp.window.move({ direction = "up" }))
-hl.bind("SHIFT + down",  hl.dsp.window.move({ direction = "down" }))
+hl.bind("SHIFT + CTRL + left",  hl.dsp.window.move({ direction = "left" }))
+hl.bind("SHIFT + CTRL + right", hl.dsp.window.move({ direction = "right" }))
+hl.bind("SHIFT + CTRL + up",    hl.dsp.window.move({ direction = "up" }))
+hl.bind("SHIFT + CTRL + down",  hl.dsp.window.move({ direction = "down" }))
 
 
 for i = 1, 10 do
@@ -279,7 +279,8 @@ hl.window_rule({
   match = {
     class = "kitty"
   },
-  opacity = 0.8
+  opacity = 0.8,
+  fullscreen = false
 })
 
 hl.window_rule({
@@ -288,4 +289,13 @@ hl.window_rule({
     class = "org.telegram.desktop"
   },
   float = true
+})
+
+hl.window_rule({
+  name = "pip float",
+  match = {
+    title = "Picture-in-Picture"
+  },
+  float = true,
+  size = {1600/2,900/2}
 })
