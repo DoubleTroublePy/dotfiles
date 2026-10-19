@@ -49,8 +49,7 @@ window#waybar.solo {
 #workspaces button.visible, 
 #workspaces button.active
 {
-  background-color:     @fg4;
-  color:                @bg;
+  background-color:     #285577;
 }
 
 

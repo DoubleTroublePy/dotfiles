@@ -2,8 +2,8 @@
 . $HOME/.nix-profile/etc/profile.d/hm-session-vars.sh
 
 # path
+# cargo
 export PATH="$PATH:/home/dtpy/.cargo/bin"
-
 
 # gpg shit
 GPG_TTY=$(tty)
@@ -47,11 +47,12 @@ setopt correct
 plugins=(git zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
+# General user configuration
+# custom vars
+
 # paths
 export EDITOR=nvim
 
-# General user configuration
-# custom vars
 export TERM=xterm-256color
 
 # alias

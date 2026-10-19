@@ -2,14 +2,18 @@
     "position": "bottom",
     "height": 22,
 
-    "modules-left": ["hyprland/workspaces"],
+    "modules-left": ["hyprland/workspaces", "sway/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["hyprland/submap", "custom/sep", "hyprland/language", "custom/sep", "pulseaudio", "custom/sep", "network", "custom/sep-bat", "battery", "battery#bat2","custom/sep", "tray"],
+    "modules-right": ["pulseaudio", "custom/sep", "network", "custom/sep-bat", "battery", "battery#bat2","custom/sep", "tray"],
 
     "hyprland/workspaces": {
       "disable-scroll": true,
       "all-outputs": true,
       "format": "{name}"
+    },
+    "sway/workspaces": {
+      "disable-scroll": true,
+    	"all-outputs": true
     },
     // Hyprland Submaps
     "hyprland/submap": {

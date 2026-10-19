@@ -4,6 +4,7 @@ call plug#begin('~/.config/nvim')
   " Plugin Section
   Plug 'scrooloose/nerdtree'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'brenoprata10/nvim-highlight-colors'
 call plug#end()
 
 set nocompatible            " disable compatibility to old-time vi
