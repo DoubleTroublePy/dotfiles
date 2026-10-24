@@ -1,6 +1,3 @@
-# nix home-manager
-. $HOME/.nix-profile/etc/profile.d/hm-session-vars.sh
-
 # path
 # cargo
 export PATH="$PATH:/home/dtpy/.cargo/bin"
@@ -66,6 +63,10 @@ alias ollamaq="ollama run qwen2.5-coder:1.5b"
 # neovim
 alias v="nvim"
 alias sv="sudo -E nvim"
+
+# emacs
+alias e="emacsclient -c -a ''"
+alias se="sudo -E emacsclient -c -a ''"
 
 alias hx="helix"
 export PATH="$PATH:/opt/nvim-linux64/bin"

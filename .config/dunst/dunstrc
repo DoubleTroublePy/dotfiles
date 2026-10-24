@@ -92,7 +92,8 @@
     frame_width = 2
     
     # Defines color of the frame around the notification window.
-    frame_color = "#ff5eaf"
+    #frame_color = "#ff5eaf"
+    frame_color = "#285577"
     separator_height = 2
     
     # Size of gap to display between notifications - requires a compositor.

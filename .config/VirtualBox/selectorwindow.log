@@ -1,0 +1,23 @@
+00:00:00.211766 VirtualBox GUI VM Selector Window 7.2.22 r175245 linux.amd64 (Oct 20 2026 20:23:35) release log
+00:00:00.211768 Log opened 2026-10-22T04:41:24.042738000Z
+00:00:00.211768 Build Type: release
+00:00:00.211770 OS Product: Linux
+00:00:00.211771 OS Release: 7.2.11-arch1-1
+00:00:00.211773 OS Version: #1 SMP PREEMPT_DYNAMIC Fri, 16 Oct 2026 00:28:58 +0000
+00:00:00.211788 DMI Product Name: 20LJS4U60C
+00:00:00.211796 DMI Product Version: ThinkPad X380 Yoga
+00:00:00.211799 Firmware type: UEFI
+00:00:00.212445 Secure Boot: Disabled
+00:00:00.212476 Host RAM: 15727MB (15.3GB) total, 14146MB (13.8GB) available
+00:00:00.212478 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:00.212478 Process ID: 5717
+00:00:00.212479 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.212497 Qt version: 6.12.0
+00:00:00.213201 GUI: UIMediumEnumerator: Initial medium-enumeration finished!
+00:00:00.224160 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:00.713174 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:00.727232 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 1920x0 x 474x1030
+00:00:00.728933 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 1 work area is actually resized to: 1920x0 x 474x1030
+00:00:00.730545 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 2 work area is actually resized to: 1920x0 x 472x1030
+00:00:09.629020 GUI: UICommon: Handling aboutToQuit request..
+00:00:10.253218 GUI: UICommon: aboutToQuit request handled!

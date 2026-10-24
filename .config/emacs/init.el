@@ -1,0 +1,49 @@
+;; -*- lexical-binding: nil -*-
+
+;; disable splash screen
+(setq inhibit-splash-screen t)
+
+;; history
+(setq history-length 25)
+(savehist-mode 1)
+
+;; last cursor place
+(save-place-mode 1)
+
+;; Move customization variables to a separate file and load it
+(setq custom-file (locate-user-emacs-file "custom-vars.el"))
+(load custom-file 'noerror 'nomessage)
+
+;; line numbers
+(global-display-line-numbers-mode 1)
+
+;; Revert buffers when the underlying file has changed
+(global-auto-revert-mode 1)
+
+;; remove shit
+(menu-bar-mode 0)
+(tool-bar-mode 0)
+(scroll-bar-mode 0)
+
+;; theme
+(load-theme 'cyberpunk t)
+
+;; tabs
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 2)
+(setq vc-follow-symlinks t)
+
+;; transparency
+(set-frame-parameter nil 'alpha-background 90)
+(add-to-list 'default-frame-alist '(alpha-background . 90))
+
+;; white space
+;;(whitespace-mode 1)
+
+;; simpc: c mode
+(add-to-list 'load-path "/home/dtpy/.config/emacs/simpc-mode/")
+(require 'simpc-mode)
+(add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
+
+;; ido mode
+(ido-mode 1)

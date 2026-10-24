@@ -1,0 +1,31 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/dtpy/.config/" . "emacs/")
+ ("/home/dtpy/" . ".config/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/dtpy/.config/emacs/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "init.el"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/dtpy/.config/emacs/" (27356 44751 482755 133000) "history" "elpa/" "custom-vars.el" "custom-vars.el~" "./" "init.el~" "places.eld" "simpc-mode/" "../" "eln-cache/" "init.el" "auto-save-list/")
+
+ ("/home/dtpy/.config/" (27356 22929 236335 151000) "kitty/" "dconf/" "cmus/" "vimb/" "gtk-3.0/" "waybar/" "btop/" "chromium/" "systemd/" "pavucontrol-qt/" "pulse/" "./" "glow/" "emacs/" "i3/" "iamb/" "../" "awesome/" "QtProject.conf" "sway/" "hypr/" "nvim/" "dunst/" "mpv/" "i3status/" "librewolf/" "newsboat/" "coc/" "helix/" "ranger/" "VirtualBox/" "colors.css" "wofi/")
+
+ ("/home/" (27352 25387 418316 588000) "./" "../" "dtpy/")
+
+ ("/home/dtpy/" (27356 44640 843699 581000) "aur/" "vms/" ".e4mc_cache/" ".bash_profile" ".zcompdump-archtop-5.9.2" ".cache/" ".bundle/" ".password-store/" ".wezterm.lua" ".texlive/" ".bashrc" ".startup.sh" "dotfiles/" ".profile" ".cups/" ".proton.sh" ".quicklisp/" ".rustup/" ".calibre/" ".nix-profile" ".pulse-cookie" "pt/" ".steam/" ".mputils/" ".x2goclient/" ".hetty/" ".oh-my-zsh/" ".zshrc.pre-oh-my-zsh" ".espup/" ".gitconfig" ".packettracer" ".zshrc_fn.sh" ".vimrc" ".zcompdump-archtop-5.9.1" ".fehbg" "Sound/" ".zsh_history" "./" ".python_history" ".vim/" ".zshrc" ".gtk-bookmarks" "motd.bkp" ".qemu-myvm-vnc" ".gtkrc-2.0" ".bash_logout" ".nv/" ".viminfo" ".mplayer/" ".java/" ".zcompdump-archtop-5.9.zwc" ".zcompdump-192-5.9.zwc" ".zshrc.pre-oh-my-zsh-2026-03-21_02-10-38" ".wine/" ".zcompdump-archtop-5.9.1.zwc" ".gnupg/" ".pub-cache/" ".zshrc.tmp" ".nix-defexpr/" ".zshrc.bak" "gpg/" ".pki/" "Downloads/" ".config/" ".minecraft/" ".steampath" "../" ".zcompdump-archtop-5.9.2.zwc" ".x2go/" ".arduino15/" ".bash_history" ".scripts/" ".zshrc_local" ".zcompdump-archlinux-5.9.zwc" "home.nix" "marcille.jpg" ".password-store.tmp/" "Documents/" ".zcompdump-192-5.9" ".ollama/" ".factorio/" "motd/" "Games/" "Music/" ".gradle/" ".var/" "wallpapers/" ".zcompdump-archiso-5.9.2" ".zcompdump-archlinux-5.9" ".cargo/" "PLAYISM/" ".sqlite_history" ".dart-tool/" "Pictures/" ".fltk/" ".swaylock/" ".zshenv" ".steampid" ".zcompdump-archiso-5.9.2.zwc" ".ssh/" ".zcompdump-archtop-5.9" "Videos/" ".local/" ".sbclrc" ".zenmap/" ".wget-hsts" ".gnupg.tmp/" "stuff/" ".gems/" ".npm/" ".flutter" ".nix-channels" "Desktop/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

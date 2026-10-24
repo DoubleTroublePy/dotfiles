@@ -98,7 +98,7 @@
           "default": ["", "", ""]
       },
       "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
-      "on-click-right": "env -u WAYLAND_DISPLAY pavucontrol-qt"
+      "on-click-right": "pavucontrol-qt"
     },
     "custom/spotify": {
         "interval": 1,
